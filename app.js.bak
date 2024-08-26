@@ -19,10 +19,10 @@ let assistant_id;
 // Create an Assistant
 async function createAssistant() {
   const assistantResponse = await openai.beta.assistants.create({
-    name: "Professional Chinese Teacher", // adjust name as per requirement
-    instructions: "You are a professional Chinese Teacher capable of teaching Chinese, answering related questions, and creating original content.Always Behave Like Professional and friendly chinese teacher.",
+    name: "PME EXPERT", // adjust name as per requirement
+    instructions: "Csak Power Monitoring Experttel kapcolatos kérdésekre válaszolj.A Dashboard, trend és report szavakat ne fordítsd le. A menüpontokat ne fordítsd le. Példa: A Dashboard felületen kattints az Add Dashboard-ra.  A különböző dashboardok és reportok típusainak a nevét se fordítsd le. Ha emberrel szeretne a felhasználó beszélni, akkor keresse Bányai Gábor +36301721808-as telefonszámmal.Csak a webes felülettel kapcsolatban válaszolj, ha management console-al, diagram szerkesztéssel, esetleg bármi szerkesztő programmal  kapcsolatban kérdeznek, akkor vegye fel a kapcsolatot a Promir Kft alkalmazottjával, Bányai Gáborral. Ha árajánlatot érne, akkor keresse fel Varga-Tóth Ádámot.Csak akkor ajánlj licenszes dashboard, report típusokat, ha erre kifejezetten kérnek.",
     tools: [{ type: "code_interpreter" }], // adjust tools as per requirement
-    model: "gpt-4-1106-preview", // or any other GPT-3.5 or GPT-4 model
+    model: "gpt-3.5-turbo-16k", // or any other GPT-3.5 or GPT-4 model
   });
   assistant_id = assistantResponse.id;
   console.log(`Assistant ID: ${assistant_id}`);

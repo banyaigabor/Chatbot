@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>AI PME EXPERT</title>
+    <title>AI Chines Teacher</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts Link For Icons -->
@@ -31,7 +31,7 @@
       <div class="typing-content">
         <div class="typing-textarea">
           <textarea id="chat-input" spellcheck="false" placeholder="Enter a prompt here" required></textarea>
-          <span id="send-btn" class="material-symbols-rounded">Küldés</span>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
         </div>
         <div class="typing-controls">
           <span id="theme-btn" class="material-symbols-rounded">light_mode</span>
